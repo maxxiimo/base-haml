@@ -1,0 +1,20 @@
+%span.breaker.mt20
+
+%footer{:id => 'ft', :role => "contentinfo"}
+  %ul
+    %li
+      = link_to 'About Me', root_path, :title => ''
+    %li
+      = link_to 'Site Map', root_path, :title => ''
+    %li
+      = link_to 'Terms of Use', root_path, :title => ''
+    %li
+      = link_to 'Privacy', root_path, :title => ''
+    %li
+      = link_to 'Contact Us', root_path, :title => ''
+    %li.icons
+      = link_to image_tag('icons/rss.png', :alt => 'RSS', :width => '32', :height => '32'), root_path, :title => ''
+    %li.icons
+      = link_to image_tag('icons/twitter.png', :alt => 'Twitter', :width => '32', :height => '32'), root_path, :title => ''
+    %li.icons
+      = link_to image_tag('icons/facebook.png', :alt => 'Facebook', :width => '32', :height => '32'), root_path, :title => ''

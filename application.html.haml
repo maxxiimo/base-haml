@@ -1,0 +1,11 @@
+!!!
+= head
+%body
+  = chromeframe
+  %header{:id => 'hd', :role => "banner"}
+    = render :partial => 'shared/logo'
+    = render :partial => 'shared/navigation'
+  #main{:role => "main"}
+    = yield
+  = render :partial => 'shared/footer'
+= scripts
