@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.12'
 
-gem 'mobylette'
 gem 'jquery-rails', '2.0.2'
 gem 'haml-rails'
 
@@ -21,6 +20,7 @@ group :assets do
   # Compass specific gems.
   gem 'compass-rails'
   gem 'oily_png'
+  gem 'susy'
 end
 
 # See https://github.com/ndbroadbent/turbo-sprockets-rails3
