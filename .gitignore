@@ -52,3 +52,4 @@ doc/
 # Local
 scratch.*
 public/source
+vendor/source

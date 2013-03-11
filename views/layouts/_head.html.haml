@@ -3,6 +3,7 @@
   %link{:rel => "dns-prefetch", :href => "//ajax.googleapis.com"}
   %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
   %title= content_for?(:title) ? yield(:title) : "XXX"
+  -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
   %meta{:name => "description", :content => "XXX"}
   %meta{:name => "viewport", :content => "width=device-width"}
   -# %meta{:name => "viewport", :content => "width=device-width,initial-scale=1"}
