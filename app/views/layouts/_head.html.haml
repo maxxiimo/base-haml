@@ -1,10 +1,9 @@
 %head
   %meta{:charset => "utf-8"}
-  -# Uncomment if you plan to use Google APIs, otherwise delete.
-  -# %link{:rel => "dns-prefetch", :href => "//ajax.googleapis.com"}
-  -# %link{:rel => "dns-prefetch", :href => "//fonts.googleapis.com"}
+  %link{:rel => "dns-prefetch", :href => "//fonts.googleapis.com"}
   %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
   %title= content_for?(:title) ? yield(:title) : "XXX"
+  -# alternative title format.
   -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
   %meta{:name => "description", :content => "XXX"}
   %meta{:name => "viewport", :content => "width=device-width"}
@@ -19,6 +18,9 @@
 
   -# Google Web Fonts combination ideas, if you decide to use, uncomment combination and delete the rest.
 
+  %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
+
   -# %link{:href => "http://fonts.googleapis.com/css?family=Cantata+One", :rel => "stylesheet", :type => "text/css"}
   -# %link{:href => "http://fonts.googleapis.com/css?family=Imprima", :rel => "stylesheet", :type => "text/css"}
 
@@ -28,9 +30,6 @@
   -# %link{:href => "http://fonts.googleapis.com/css?family=Arvo", :rel => "stylesheet", :type => "text/css"}
   -# %link{:href => "http://fonts.googleapis.com/css?family=PT+Sans", :rel => "stylesheet", :type => "text/css"}
 
-  -# %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
-  -# %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
-
   = csrf_meta_tag
 
   -# *******************************************************************************************
@@ -38,6 +37,7 @@
   -#
   -# Additional Prefetch Locations
   -# ----------------------------
+  -# %link{:rel => "dns-prefetch", :href => "//ajax.googleapis.com"}
   -# %link{:rel => "dns-prefetch", :href => "//s3.amazonaws.com"}
   -# %link{:rel => "dns-prefetch", :href => "//yui.yahooapis.com"}
   -# %link{:rel => "dns-prefetch", :href => "//ajax.microsoft.com"}
