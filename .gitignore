@@ -51,5 +51,6 @@ doc/
 
 # Local
 scratch.*
+graveyard.sass
 public/source
 vendor/source
