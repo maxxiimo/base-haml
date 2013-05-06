@@ -12,6 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require modernizr-2.6.2.min
-//= require jquery-1.9.1.min
 //= require site
