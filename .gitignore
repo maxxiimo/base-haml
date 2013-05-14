@@ -8,37 +8,93 @@
 /log/*.log
 /tmp
 
-# Numerous always-ignore extensions
+# Rails
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+*.log
+tmp
+tmp/**/*
+
+# Documentation
+doc/
+doc/api
+doc/app
+.yardoc
+.yardopts
+coverage
+
+# Public Uploads
+public/system/*
+public/themes/*
+
+# Public Cache
+public/javascripts/cache
+public/stylesheets/cache
+
+# Vendor Cache
+vendor/cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+.cache
+.settings
+.tmproj
+*.esproj
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# NetBeans
+nbproject
+
+# Eclipse
+.project
+
+# Vim
+*.swp
+*.swo
+
+# RubyMine
+.idea
+
+# Dreamweaver
+_notes
+dwsync.xml
+
+# E-texteditor
+.eprj
+
+# Redcar
+.redcar
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# sass
+.sass-cache
+.sass-cache/*
+
+#rvm
+.rvmrc
+.rvmrc.*
+
+# Rubinius
+*.rbc
+
+# Extensions to ignore
 *.diff
 *.err
 *.orig
 *.log
 *.rej
-*.swo
-*.swp
 *.vi
 *~
-*.sass-cache
-
-# OS or Editor folders
-.DS_Store
-Thumbs.db
-.cache
-.project
-.settings
-.tmproj
-*.esproj
-nbproject
-*.sublime-project
-*.sublime-workspace
-
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
 
 # Folders to ignore
 .hg
@@ -46,8 +102,6 @@ dwsync.xml
 .CVS
 intermediate
 publish
-.idea
-doc/
 
 # Local
 scratch.*
