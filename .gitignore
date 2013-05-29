@@ -108,3 +108,4 @@ scratch.*
 graveyard.sass
 public/source
 vendor/source
+local_env.yml
