@@ -102,6 +102,7 @@ dwsync.xml
 .CVS
 intermediate
 publish
+bin/
 
 # Local
 scratch.*
