@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'jquery-rails', '2.2.1'
+gem 'haml-rails'
+# gem 'rack-mini-profiler'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -26,6 +29,3 @@ group :assets do
   gem 'oily_png'
   gem 'susy'
 end
-
-gem 'jquery-rails', '2.2.1'
-gem 'haml-rails'
