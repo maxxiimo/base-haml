@@ -7,7 +7,7 @@ module ApplicationHelper
     render :partial => 'layouts/scripts'
   end
 
-  def chromeframe
-    render :partial => 'layouts/chromeframe'
+  def browsehappy
+    render :partial => 'layouts/browsehappy'
   end
 end
