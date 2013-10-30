@@ -1,20 +1,18 @@
+# Rails
+.bundle
+database.yml
+.secret
+
 # Ignore bundler config
 /.bundle
 
 # Ignore the default SQLite database
 /db/*.sqlite3
+/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles
 /log/*.log
 /tmp
-
-# Rails
-.bundle
-db/*.sqlite3
-db/*.sqlite3-journal
-*.log
-tmp
-tmp/**/*
 
 # Documentation
 doc/
