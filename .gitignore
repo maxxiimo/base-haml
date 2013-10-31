@@ -103,7 +103,7 @@ publish
 bin/
 
 # Local
-scratch.*
+# scratch.*
 graveyard.sass
 public/source
 vendor/source
