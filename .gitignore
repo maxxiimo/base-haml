@@ -1,7 +1,6 @@
 # Rails
 .bundle
 database.yml
-.secret
 
 # Ignore bundler config
 /.bundle
