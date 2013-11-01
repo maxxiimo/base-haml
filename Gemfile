@@ -36,6 +36,6 @@ gem 'turbolinks',   '1.1.1'
 gem 'jbuilder',     '1.0.2'
 
 # Compass specific gems.
-gem 'compass-rails'
+gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
 gem 'oily_png'
 gem 'susy'
