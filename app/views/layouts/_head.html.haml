@@ -15,7 +15,7 @@
   %link{:rel => "shortcut icon", :href => "/favicon.ico"}
   %link{:rel => "apple-touch-icon-precomposed", :href => "/apple-touch-icon-precomposed.png"}
 
-  = stylesheet_link_tag "application"
+  = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
   -# for production customize modernizr at: http://www.modernizr.com/download/
   -# IMPORTANT: add the following to production.rb:
   -# config.assets.precompile += %w( modernizr-2.7.1.min.js )
