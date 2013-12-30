@@ -12,8 +12,8 @@
   -# to match layout to device width and set zoom level to 1:1
   -# %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
 
-  %link{:rel => "shortcut icon", :href => "/favicon.ico"}
-  %link{:rel => "apple-touch-icon-precomposed", :href => "/apple-touch-icon-precomposed.png"}
+  = favicon_link_tag '/favicon.ico'
+  = favicon_link_tag '/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
 
   = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
   -# for production customize modernizr at: http://www.modernizr.com/download/
@@ -21,7 +21,7 @@
   -# config.assets.precompile += %w( modernizr-2.7.1.min.js )
   = javascript_include_tag 'modernizr-2.7.1.min'
 
-  -# Google Web Fonts combination ideas, if you decide to use, uncomment combination and delete the rest.
+  -# Google Web Fonts combination ideas. Delete what you do not use.
   %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
   %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
 
