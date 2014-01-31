@@ -1,6 +1,6 @@
 # Rails
 .bundle
-database.yml
+config/database.yml
 
 # Ignore bundler config
 /.bundle
