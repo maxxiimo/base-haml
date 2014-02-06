@@ -4,9 +4,9 @@
   %body
     = browsehappy
     %header{:role => "banner"}
-      = render :partial => 'layouts/logo'
-      = render :partial => 'layouts/navigation'
+      = render 'layouts/logo'
+      = render 'layouts/navigation'
     #main{:role => "main"}
       = yield
-    = render :partial => 'layouts/footer'
+    = render 'layouts/footer'
     = scripts

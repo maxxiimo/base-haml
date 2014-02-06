@@ -1,13 +1,13 @@
 module ApplicationHelper
   def head
-    render :partial => 'layouts/head'
+    render 'layouts/head'
   end
 
   def scripts
-    render :partial => 'layouts/scripts'
+    render 'layouts/scripts'
   end
 
   def browsehappy
-    render :partial => 'layouts/browsehappy'
+    render 'layouts/browsehappy'
   end
 end
