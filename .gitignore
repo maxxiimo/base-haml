@@ -80,6 +80,8 @@ dwsync.xml
 #rvm
 .rvmrc
 .rvmrc.*
+.ruby-version
+.ruby-gemset
 
 # Rubinius
 *.rbc
