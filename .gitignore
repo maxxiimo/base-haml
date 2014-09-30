@@ -105,6 +105,7 @@ bin/
 
 # Local
 scratch.*
+*.TODO
 graveyard.sass
 public/source
 vendor/source
