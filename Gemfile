@@ -13,7 +13,7 @@ gem 'sdoc',         '0.4.0', group: :doc
 gem 'haml-rails'
 
 # Compass specific gems.
-gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
+gem 'compass-rails'
 gem 'oily_png'
 gem 'susy'
 
