@@ -1,39 +1,33 @@
 %head
   %meta{charset: "utf-8"}
-  %link{rel: "dns-prefetch", href: "//fonts.googleapis.com"}
-  /[if IE] %meta{"http-equiv" => "X-UA-Compatible", content: "IE=edge"}
-
+  -# %link{rel: "dns-prefetch", href: "//fonts.googleapis.com"}
+  -# %link{rel: "dns-prefetch", href: "//use.typekit.com"}
+  /[if IE] %meta{"http-equiv" => "x-ua-compatible", content: "ie=edge"}
   %title= content_for?(:title) ? yield(:title) : "XXX"
   -# alternative title format.
   -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
-
   %meta{name: "description", content: "XXX"}
+  %meta{name: "keywords", content: ""}
   %meta{name: "viewport", content: "width=device-width"}
   -# to match layout to device width and set zoom level to 1:1
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
 
   = favicon_link_tag '/favicon.ico'
-  = favicon_link_tag '/apple-touch-icon-precomposed.png', rel: 'apple-touch-icon-precomposed', type: 'image/png'
+  = favicon_link_tag '/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
 
-  = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
-
-  -# Google Web Fonts combination ideas. Delete what you do not use.
-  %link{href: "http://fonts.googleapis.com/css?family=Droid+Serif", rel: "stylesheet", type: "text/css"}
-  %link{href: "http://fonts.googleapis.com/css?family=Droid+Sans", rel: "stylesheet", type: "text/css"}
-
-  -# %link{href: "http://fonts.googleapis.com/css?family=Cantata+One", rel: "stylesheet", type: "text/css"}
-  -# %link{href: "http://fonts.googleapis.com/css?family=Imprima", rel: "stylesheet", type: "text/css"}
-
-  -# %link{href: "http://fonts.googleapis.com/css?family=Crimson+Text", rel: "stylesheet", type: "text/css"}
-  -# %link{href: "http://fonts.googleapis.com/css?family=Allerta", rel: "stylesheet", type: "text/css"}
-
-  -# %link{href: "http://fonts.googleapis.com/css?family=Arvo", rel: "stylesheet", type: "text/css"}
-  -# %link{href: "http://fonts.googleapis.com/css?family=PT+Sans", rel: "stylesheet", type: "text/css"}
-
-  -# %link{href: "http://fonts.googleapis.com/css?family=PT+Serif:400,700", rel: "stylesheet", type: "text/css"}
-
+  -# For turbolinks add: , "data-turbolinks-track" => true
+  = stylesheet_link_tag 'application', media: 'all'
   -# for production customize modernizr at: http://www.modernizr.com/download/
   = javascript_include_tag 'modernizr-2.8.3.min'
+
+  -# Google Web Fonts combination idea. Delete if you do not use.
+  -# %link{href: "http://fonts.googleapis.com/css?family=Droid+Serif", rel: "stylesheet", type: "text/css"}
+  -# %link{href: "http://fonts.googleapis.com/css?family=Droid+Sans", rel: "stylesheet", type: "text/css"}
+
+  -# Typekit script. Delete if you do not use.
+  -# %script{src: '//use.typekit.net/XXX.js', type: 'text/javascript'}
+  -# :javascript
+  -#   try{Typekit.load();}catch(e){}
 
   = csrf_meta_tag
 
@@ -43,7 +37,6 @@
   -#
   -# Additional Meta-Tags
   -# ----------------------------
-  -# %meta{name: "keywords", content: ""}
   -# %meta{name: "owner", content: ""}
   -# %meta{name: "author", content: ""}
   -# %meta{name: "copyright", content: "Copyright (c) 2014 XXX"}
