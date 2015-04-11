@@ -1,9 +1,9 @@
 !!!
 %html.no-js{lang: 'en'}
-  = head
+  = render 'layouts/head'
   %body
     #wrapper
-      = browsehappy
+      = render 'layouts/browsehappy'
       %header{role: 'banner'}
         .container
           = render 'layouts/logo'
@@ -12,4 +12,4 @@
         .container
           = yield
       = render 'layouts/footer'
-    = scripts
+    = render 'layouts/scripts'
