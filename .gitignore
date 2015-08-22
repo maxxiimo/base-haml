@@ -1,6 +1,7 @@
 # Rails
 .bundle
 config/database.yml
+config/secrets.yml
 
 # Ignore bundler config
 /.bundle
@@ -107,6 +108,5 @@ bin/
 scratch.*
 *.TODO
 graveyard.sass
-public/source
-vendor/source
+source
 local_env.yml

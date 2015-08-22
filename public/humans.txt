@@ -11,5 +11,6 @@
 
 # TECHNOLOGY COLOPHON
 
+    Ruby on Rails
     HTML5, CSS3
     jQuery, Modernizr, Normalize.css
