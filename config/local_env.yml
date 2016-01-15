@@ -1,3 +1,5 @@
+# Use Rails secret.yml, but if you want something different...
+
 SOMETHING_KEY: ""
 SOMETHING_SECRET: ""
 

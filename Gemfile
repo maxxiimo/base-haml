@@ -16,6 +16,7 @@ gem 'haml-rails'
 gem 'compass-rails'
 gem 'oily_png'
 gem 'susy'
+gem 'breakpoint'
 
 group :development, :test do
   gem 'byebug'
