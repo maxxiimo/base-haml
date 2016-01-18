@@ -9,18 +9,42 @@
   -# config.action_dispatch.default_headers.merge!('X-UA-Compatible' => 'IE=edge')
 
   %title= content_for?(:title) ? yield(:title) : "XXX"
-  -# alternative title format.
+  -# Alternative title format.
   -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
 
-  %meta{name: "description", content: "XXX"}
-  %meta{name: "keywords", content: ""}
+  %meta{name: "description",         content: ""}
+
+  %meta{property: "og:locale",       content: "en_US"}
+  %meta{property: "og:type",         content: "website"}
+  %meta{property: "og:url",          content: ""}
+  %meta{property: "og:site_name",    content: ""}
+  %meta{property: "og:title",        content: ""}
+  %meta{property: "og:description",  content: ""}
+  %meta{property: "fb:admins",       content: "name@domain.com"}
+  %meta{property: "og:image",        content: "location_url"}
+
+  %meta{name: "twitter:card",        content: "summary"}
+  %meta{name: "twitter:site",        content: "@site_account"}
+  %meta{name: "twitter:url",         content: "http://www.example.com/path/to/page.html"}
+  %meta{name: "twitter:title",       content: ""}
+  %meta{name: "twitter:description", content: ""}
+  %meta{name: "twitter:image",       content: "http://www.example.com/path/to/image.jpg"}
+  %meta{name: "twitter:creator",     content: "@individual_account"}
+
+  %meta{itemprop: "name",            content: ""}
+  %meta{itemprop: "url",             content: ""}
+  %meta{itemprop: "description",     content: ""}
+
+  -# See more_meta_tag_options.txt (in project root directory).
+
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-  -# https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26
+  -# See https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26
+
   = favicon_link_tag '/favicon.ico'
   = favicon_link_tag '/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
 
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-  -# for production customize modernizr at: http://www.modernizr.com/download/
+  -# For production customize modernizr at: http://www.modernizr.com/download/
   = javascript_include_tag 'modernizr-2.8.3.min'
 
   -# Google Web Fonts combination idea. Delete if you do not use.
