@@ -2,6 +2,7 @@
   %meta{charset: "utf-8"}
   -# %link{rel: "dns-prefetch", href: "//fonts.googleapis.com"}
   -# %link{rel: "dns-prefetch", href: "//use.typekit.com"}
+  -# For more prefetch options see more_meta_tag_options.txt (in project root directory).
   %meta{"http-equiv" => "x-ua-compatible", content: "ie=edge"}
   -# https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md#x-ua-compatible
   -# Can setup in application.rb as follows:
@@ -13,6 +14,11 @@
   -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
 
   %meta{name: "description",         content: ""}
+  -# For better search engine result page descriptions use the following:
+  -# - if content_for?(:description_tag)
+  -#   %meta{name: "description",       content: yield(:description_tag).strip}
+  -# - else
+  -#   %meta{name: "description",       content: "XXX"}
 
   %meta{property: "og:locale",       content: "en_US"}
   %meta{property: "og:type",         content: "website"}
@@ -35,7 +41,7 @@
   %meta{itemprop: "url",             content: ""}
   %meta{itemprop: "description",     content: ""}
 
-  -# See more_meta_tag_options.txt (in project root directory).
+  -# For more meta tag options see more_meta_tag_options.txt (in project root directory).
 
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
   -# See https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26
