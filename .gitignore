@@ -110,6 +110,7 @@ publish
 bin/
 
 # Local
+scratch
 scratch.*
 *.TODO
 graveyard.sass
