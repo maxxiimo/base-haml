@@ -1,9 +1,11 @@
 %head
   %meta{charset: "utf-8"}
+  -# Prefetch...
   -# %link{rel: "dns-prefetch", href: "//fonts.googleapis.com"}
   -# %link{rel: "dns-prefetch", href: "//use.typekit.com"}
   -# For more prefetch options see more_meta_tag_options.txt (in project root directory).
   %meta{"http-equiv" => "x-ua-compatible", content: "ie=edge"}
+  -# Explanation...
   -# https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md#x-ua-compatible
   -# Can setup in application.rb as follows:
   -# http://chriszetter.com/blog/2013/10/04/setting-headers-in-rails-4/
@@ -44,9 +46,11 @@
   -# For more meta tag options see more_meta_tag_options.txt (in project root directory).
 
   -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-  -# See https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26
+  -# Explanation...
+  -# https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26
 
   = favicon_link_tag '/favicon.ico'
+  -# %link{href: "animated_favicon.gif", rel: "icon", type: "image/gif"}
   = favicon_link_tag '/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
 
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true

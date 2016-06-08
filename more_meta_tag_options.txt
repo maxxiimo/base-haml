@@ -1,6 +1,10 @@
 *******************************************************************************************
-MORE OPTIONS:  https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#social-networks
+MORE OPTIONS:  https://dev.twitter.com/cards/markup
                https://gist.github.com/1981339
+               http://www.metatags.org/all_metatags
+               http://www.webmarketingnow.com/tips/meta-tags-uncovered.html
+               https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+
 
 Additional Meta-Tags
 ----------------------------
@@ -12,10 +16,6 @@ Additional Meta-Tags
 
 %meta{property: "article:published_time", content: "YYYY-MM-DD"}
 %meta{property: "article:modified_time", content: "YYYY-MM-DD"}
-
---
-http://www.metatags.org/all_metatags
-http://www.webmarketingnow.com/tips/meta-tags-uncovered.html
 
 Additional Prefetch Locations
 ----------------------------
